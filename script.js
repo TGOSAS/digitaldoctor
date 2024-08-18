@@ -84,6 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
+    document.querySelector('.cta-button').addEventListener('click', function(event) {
+        event.preventDefault();
+        showTab('contact');  // Show the contact tab
+        document.querySelector('#contact-content').scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to contact section
+    });
+    
+    
+    
     // Show services tab by default
     showTab('services');
 });
